@@ -2,7 +2,7 @@ import { ChatTeardropDots } from "phosphor-react";
 import { Popover } from "@headlessui/react";
 import { WidgetPanel } from "./WidgetPanel";
 
-import styles from "./Widget.module.css";
+import styles from "../styles/components/Widget.module.scss";
 
 export function Widget() {
   return (

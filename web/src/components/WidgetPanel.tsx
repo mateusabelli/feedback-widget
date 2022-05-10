@@ -1,7 +1,7 @@
 import { Lightbulb, NotePencil, Warning } from "phosphor-react";
 import { CloseButton } from "./CloseButton";
 
-import styles from "./WidgetPanel.module.css";
+import styles from "../styles/components/WidgetPanel.module.scss";
 
 const feedbackTypes = {
   PROBLEM: {
