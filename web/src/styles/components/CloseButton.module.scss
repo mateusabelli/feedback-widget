@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: $clr-neutral-400;
+
+  &:hover {
+    color: $clr-neutral-100;
+  }
+}
+

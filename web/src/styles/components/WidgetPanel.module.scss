@@ -1,0 +1,66 @@
+@use "../abstracts/" as *;
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: $clr-neutral-800;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 32rem) {
+  .panel {
+    width: calc(100vw - 2rem);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 2rem;
+  min-width: 100%;
+  gap: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding-block: 2rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  background-color: $clr-neutral-700;
+
+  & > span {
+    font-size: 2rem;
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    border-color: $clr-primary-400;
+  }
+}
+
+.headerText {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.footerText {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: $clr-neutral-400;
+
+  & > a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
