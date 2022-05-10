@@ -1,13 +1,15 @@
+@use "../abstracts/" as *;
+
 .panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: auto;
   padding: 1rem;
-  border-radius: 1rem;
   margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: $clr-neutral-800;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  background-color: hsl(240, 6%, 10%);
 }
 
 @media (max-width: 32rem) {
@@ -26,25 +28,23 @@
 
 .buttons {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   gap: 0.25rem;
   padding-block: 2rem;
-  background-color: rgb(39 39 42);
   border-radius: 1rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-}
+  border: 2px solid transparent;
+  background-color: $clr-neutral-700;
 
-.buttons > span {
-  font-size: 2rem;
-}
+  & > span {
+    font-size: 2rem;
+  }
 
-.buttons:focus-visible,
-.buttons:hover {
-  outline: none;
-  border-color: #8257e6;
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    border-color: $clr-primary-400;
+  }
 }
 
 .headerText {
@@ -55,12 +55,12 @@
 .footerText {
   font-size: 0.75rem;
   line-height: 1rem;
-  color: hsl(0, 0%, 64%);
-}
+  color: $clr-neutral-400;
 
-.footerText > a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  & > a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 }
 
