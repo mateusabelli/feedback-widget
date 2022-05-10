@@ -5,6 +5,13 @@ body {
   background-color: #09090a;
 }
 
+button {
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 /* Box sizing rules */
 *,
 *::before,
